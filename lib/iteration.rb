@@ -22,12 +22,14 @@ def find_greater_pair(src)
   outer_results=[]
   row_index=0 
   while row_index<src.count do
-    element_index=0
-    inner_results=[]
-    while element_index<src[row_index].count do
+   # element_index=0
+   # inner_results=[]
+   # while element_index<src[row_index].count do
       
   if src[row_index][0]>src[row_index][1]
-    inner_results<< src[row_index][0]
+    outer_results<< src[row_index][0]
+  else
+    outer_results<< src[row_index][1]
   end
   element_index+=1 
 end
